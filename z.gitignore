@@ -1,0 +1,20 @@
+*.csv
+*.tsv
+*.pdf
+*.zip
+*.log
+\.*
+*SCOPE*/**/*
+
+#= dir =
+from*/**/*
+BI/**/*
+NEO/**/*
+offer/**/*
+tmp/**/*
+0*
+
+# Packages
+bin
+var
+sdist

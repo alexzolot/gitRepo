@@ -985,7 +985,7 @@ RunJob= function(LocalRoot= 'M:/test', CosmosRoot= "/my/test"
 				len= nu(gsub('.+:(.+)$','\\1', grep('Committed Length', sc.out, v=T)))) 
 		sink('log.txt', append =T); pr(sc.outStreams); sink()
 		
-		#down.files= cn('nConversions ClkPub ClkPubAU ClkPubA_DURL99'); zzz
+		#down.files= cn('nConversions ClkPub ClkPubAU ClkPubA_DURL99'); 
 		flist= list()
 		for(f in sus(sc.outStreams, len< 1e8)$stream ){catt(1566, flist[f]<- ff<-  gsub('.+/([^/]+)$','\\1', f))
 			sh= scope(cmd=sf('copy %s %s/%s',  f, getwd(), ff),  ScopeFolder=ScopeFolder, vc=vc)
